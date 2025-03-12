@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     resultView.setText("Invalid Number");
 
                 }
-                //conversion logic
+                //conversion logics
                 double fahrenheit = (celcius * 1.8) + 32;
 
                 resultView.setText(String.format("Result: %.2f F", fahrenheit));

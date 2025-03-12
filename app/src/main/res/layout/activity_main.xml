@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
 
+
     <EditText
         android:id="@+id/celciusInput"
         android:layout_width="match_parent"

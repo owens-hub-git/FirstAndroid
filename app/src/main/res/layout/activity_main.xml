@@ -1,138 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_margin="27dp"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Owen's Unit Conversion App"
+        android:text="Owen's Unit Converter"
         android:textSize="35sp"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="20dp"
         />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Provide Temperature in Celcius"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="20dp"
-        />
 
     <EditText
-        android:id="@+id/celciusInput"
+        android:id="@+id/inputValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:hint="Enter value"
+        android:inputType="numberDecimal"
         />
 
     <Spinner
-        android:id="@+id/tempSpinnerConvert"
+        android:id="@+id/inputSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         />
 
+
+    <Spinner
+        android:id="@+id/outputSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        />
+
+
     <Button
-        android:id="@+id/buttonConvert"
+        android:id="@+id/convertButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Convert Temperature"
+        android:text="Convert"
         />
+
 
     <TextView
         android:id="@+id/resultView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Result"
-        android:inputType="numberDecimal"
         android:textSize="18sp"
         />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Provide Weight in Kilos"
-        android:textSize="20sp"
-        android:layout_marginTop="40dp"
-        android:layout_marginHorizontal="30dp"
-        />
-
-    <EditText
-        android:id="@+id/weightInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        />
-
-
-    <Spinner
-        android:id="@+id/weightSpinnerConvert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
-    <Button
-        android:id="@+id/weightButtonConvert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Convert Weight"
-        />
-
-    <TextView
-        android:id="@+id/weightResultView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result"
-        android:inputType="numberDecimal"
-        android:textSize="18sp"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Provide Length in Centimeters"
-        android:textSize="20sp"
-        android:layout_marginTop="40dp"
-        android:layout_marginHorizontal="30dp"
-        />
-
-    <EditText
-        android:id="@+id/lengthInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        />
-
-    <Spinner
-        android:id="@+id/lengthSpinnerConvert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
-    <Button
-        android:id="@+id/lengthButtonConvert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Convert Length"
-        />
-
-    <TextView
-        android:id="@+id/lengthResultView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result"
-        android:inputType="numberDecimal"
-        android:textSize="18sp"
-        />
-
-
 </LinearLayout>

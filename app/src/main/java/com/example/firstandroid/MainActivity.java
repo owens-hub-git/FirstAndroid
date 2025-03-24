@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
+
+    //https://www.unitconverters.net/length-converter.html for conversion values
     private double performConversion(double value, String fromUnit, String toUnit) {
         switch (fromUnit) {
             //temperature
